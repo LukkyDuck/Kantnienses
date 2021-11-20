@@ -50,11 +50,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'kant.urls'
-
+#Cambiar direccion de templates en caso de que no funcione, explicacion en archivo readme.txt de la raiz
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/Patricio/Downloads/Kantnienses/kant/Templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

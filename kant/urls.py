@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from kant.views import test1, test2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('test1/', test1),
+    path('test2/', test2),
 ]
