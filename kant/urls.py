@@ -20,7 +20,7 @@ from cuestionario.views import quest
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('test1/', test1),
-    path('test2/', test2),
-    path('cuestionario/', quest),
+    path('basurero/', test1, name="pruebas"),
+    path('', test2, name="lobby"),
+    path('cuestionario/', quest, name="cuestionario"),
 ]

@@ -1,0 +1,26 @@
+
+.image-fondo {
+    background-image: url("https://image.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148920282.jpg");
+    background-size: cover;
+}
+
+.cabecera{
+  color: #fff;
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: #111 0px 0px 10px;
+  text-align:center;
+}
+
+.boton {
+border: 5px solid #FFFFFF;
+padding: 20px;
+background-color: #94DDE1;
+color: #ffffff;
+text-decoration: none;
+text-transform: uppercase;
+font-family: 'Helvetica', sans-serif;
+border-radius: 50px;
+}
