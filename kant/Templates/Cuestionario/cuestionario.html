@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %} Cuestionario {% endblock %}
+
+{% block content%}
+<head>
+    <style> 
+    select {
+      width: 99%;
+      padding: 10px 18px;
+      box-sizing: border-box;
+      border: none;
+      border-radius: 15px;
+      background-color: #fffefe;
+    }
+    </style>
+</head>
+    
+<h1 style="text-align: center; font-family:'Times New Roman', Times, serif;"> Cuestionario </h1>
+
+    <form method = "GET">
+    <div style="text-align:center; background-color: rgba(36, 253, 253, 0.14); width: 30%; border-radius: 15px;
+    padding: 15px 20px;">
+        <h3> ¿Como estas? </h3>
+        <p>{{ form.mood_field }}</p>
+
+        <h3> ¿Como has estado? </h3>
+        <p>{{ form.mood1_field }}</p>
+    </div>
+        <input type = "submit" value = "Enviar">
+    </form>
+
+{% endblock %}

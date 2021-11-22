@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cuestionario.apps.CuestionarioConfig'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'kant.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["C:/Users/Patricio/Downloads/Kantnienses/kant/Templates"],
+        'DIRS': ["kant/Templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
