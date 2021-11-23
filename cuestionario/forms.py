@@ -8,4 +8,4 @@ mood = (
 
 class MoodForm(forms.Form):
     mood_field = forms.ChoiceField(choices= mood, label = "¿Como estas? ")
-    mood1_field = forms.ChoiceField(choices= mood, label = "¿Como te encuentras? ")
+    mood1_field = forms.ChoiceField(choices= mood, widget=forms.RadioSelect())

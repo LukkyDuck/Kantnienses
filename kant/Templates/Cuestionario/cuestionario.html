@@ -13,19 +13,23 @@
       border-radius: 15px;
       background-color: #fffefe;
     }
+    style.preguntas {
+        text-align: left;
+    }
     </style>
 </head>
 <div align=center>
     <h1 style="text-align: center; font-family:'Times New Roman', Times, serif;"> Cuestionario </h1>
-
         <form method = "GET">
-        <div style="text-align:center; background-color: rgba(36, 253, 253, 0.14); width: 30%; border-radius: 15px;
-        padding: 15px 20px;">
-            <h3> ¿Como estas? </h3>
+        <div style="background-color: rgba(36, 253, 253, 0.14); width: 30%; border-radius: 15px;
+        padding: 15px 20px; text-align: left;">
+        <ul>
+            <h3 style="text-align: center;"> ¿Como estas? </h3>
             <p>{{ form.mood_field }}</p>
 
-            <h3> ¿Como has estado? </h3>
-            <p>{{ form.mood1_field }}</p>
+            <h3 style="text-align: center;"> ¿Como has estado? </h3>
+            <p style="margin-left: 70px">{{ form.mood1_field }}</p>
+        </ul>
         </div>
             <input type = "submit" value = "Enviar">
         </form>
