@@ -1,9 +1,11 @@
 from django import forms
 
 mood = (
-    (1, "Bien"),
-    (2, "Mas o menos"),
-    (3, "Mal"),
+    (1, "Casi nunca"),
+    (2, "Pocas veces"),
+    (3, "Unas veces sí, otras veces no"),
+    (4, "Muchas veces"),
+    (5, "Casi siempre"),
 )
 
 class MoodForm(forms.Form):
