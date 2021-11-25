@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from kant.views import test1, test2
-from cuestionario.views import quest
+from cuestionario.views import quest, quest2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('basurero/', test1, name="pruebas"),
     path('', test2, name="lobby"),
     path('cuestionario/', quest, name="cuestionario"),
+    path("cuestionario2/", quest2, name="cuestionario2")
 ]
