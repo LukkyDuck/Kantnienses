@@ -22,7 +22,7 @@ def quest(request):
         cont += int(request.GET['pregunta11'])
         cont += int(request.GET['pregunta12'])
         if cont >= 0:
-            return redirect('cuestionario2') 
+            return redirect('cuestionarioC') 
     return render(request,"Cuestionario/cuestionario.html", context)
 
 def quest2(request):

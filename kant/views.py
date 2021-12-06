@@ -9,3 +9,19 @@ def test1(request):
 def test2(request):
     
     return render(request, "test2.html")
+    
+def cuestionarioC(request):
+    
+    return render(request, "Cuestionario/cuestionarioC.html")
+
+def cognitivo(request):
+    
+    return render(request, "Cuestionario/cognitivo.html")
+
+def corporal(request):
+    
+    return render(request, "Cuestionario/corporal.html")
+
+def ambos(request):
+    
+    return render(request, "Cuestionario/ambos.html")

@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from kant.views import test1, test2
+from kant.views import test1, test2, cuestionarioC, corporal, cognitivo, ambos
 from cuestionario.views import quest, quest2
 
 urlpatterns = [
@@ -23,5 +23,9 @@ urlpatterns = [
     path('basurero/', test1, name="pruebas"),
     path('', test2, name="lobby"),
     path('cuestionario/', quest, name="cuestionario"),
-    path("cuestionario2/", quest2, name="cuestionario2")
+    path("cuestionario2/", quest2, name="cuestionario2"),
+    path("cuestionarioC/", cuestionarioC, name="cuestionarioC"),
+    path("cuestionarioC/cognitivo", cognitivo, name="cognitivo"),
+    path("cuestionarioC/corporal", corporal, name="corporal"),
+    path("cuestionarioC/ambos", ambos, name="ambos")
 ]
