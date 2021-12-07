@@ -20,7 +20,7 @@ def cognitivo(request):
 
 def corporal(request):
     
-    return render(request, "Cuestionario/corporal.html")
+    return render(request, "fisico.html")
 
 def ambos(request):
     
