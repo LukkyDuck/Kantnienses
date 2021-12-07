@@ -1,36 +1,81 @@
 <html>
 
 <style>
-    #barra1{
-        background-color: pink;
-        width: 100%;
-        height: 11%;
+
+    .container{
+        height: 15%;
         margin: 0;
         padding: 0;
-        list-style: none;
-        text-transform: uppercase;
-        text-align:center;
+
         
     }
     #barra1 li{
+        text.decoration: none;
         display: inline;
         margin: 0 20px;
+
     }
+    .navbar{
+        text-decoration: none;
+        width: 80%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        height: 150px;
+        line-height: 150px;
+        text-align: center;
+        vertical-align: middle;
+        text-shadow: #111 0px 0px 10px;
+        text-align: center;
+        align: center;
+        font-size: 1.5em
+        
+    }
+    .logo{
+        width: 170px;
+        cursor: pointer;
+    }
+    .navbar ul li{
+        text-decoration: none;
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        text-align: center;
+        
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: Roboto, "sans-serif";
+        font-size: 1.7rem;
+        text-align: center;
+        padding: 6px 15px;
+        border-radius: 20px;
+        
+    }
+    .navbar ul li a:hover{
+        background: #fff;
+        color: #2b1055;
+    }
+
 </style>
 
 <body>
+    <div class="container">
+        <div class="navbar">
+            <a href="{% url 'lobby' %}"><img src="https://i.ibb.co/tpX2jGD/logo-por-ahora.png" class="logo" alt="Main Logo"></a>
 
-    <ul id="barra1">
+        <ul style="text-align:center">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        </div>
+    </div>
 
-        <h1
-            style="color:black; text-align:center">Me llaman el inamovible, un gusto
-        </h1>
-
-        <li>Home</li>
-        <li>Test</li>
-        <li>Perfil</li>
-
-    </ul>
 
 </body>
 

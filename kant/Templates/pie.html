@@ -1,5 +1,5 @@
 <html>
-
+<head>
 <style>
 
     #pie{
@@ -11,35 +11,64 @@
         list-style: none;
     }
 
-    #bar{
-        margin: 0;
-        padding: 0;
-        text-align: right;
+    .bar{
+        text-decoration: none;
+        width: 80%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .bar ul{
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        display: block
+}
+
+    .bar ul li{
+        text-decoration: none;
         list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        text-align: center;
+    }
+    .bar ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: Roboto, "sans-serif";
+        font-size: 1.7rem;
+        text-align: center;
+        padding: 15px 60px;
+        border-radius: 200px;
+    }
+    .bar ul li a:hover{
+        background: #fff;
+        color: #2b1055;
+    }
+    .logo-under{
+        width: 40px;
+        cursor: pointer;
+        
     }
 
 </style>
-
+<link href="" rel="stylesheet">
+</head>
 <body>
-    <ul id="pie">
+    <div class="usm">
+        <div class="bar">
+            <a href="https://www.usm.cl"><img src="https://www.dataciencia.com/wp-content/uploads/2020/04/logo_usm_color_216x92-01.png" class="logo" alt="Main Logo"></a>
 
-        <img src="https://www.dataciencia.com/wp-content/uploads/2020/04/logo_usm_color_216x92-01.png"
-            align=left
-            width="120"
-            height="60">
-
-        <ul id="bar">
-
-            <h3
-                style="color:black; text-align:center">Soy el primo del inamovible y tengo sus mismas caracteristicas
-            </h3>
-            <li>servicios</li>
-            <li>contactos</li>
-            <li>preguntas frecuentes</li>
-
+        <ul style="text-align:center">
+            <li><a href="https://github.com/LukkyDuck/Kantnienses"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="logo-under" alt="Main Logo"></a></li>
+            <li><a href="https://docs.google.com/document/d/12mH71zH2p2adrjpZRhEJJTlqFF0HEDaTgPi0M9EduPQ/edit?usp=sharing"><img src="https://www.pngall.com/wp-content/uploads/9/Google-Drive-Logo-PNG-Image-File.png" class="logo-under" alt="Main Logo"></a></li>
+            <li><a href="https://c.tenor.com/FTl-aQrnxmoAAAAi/mecha-mecha-pollo.gif"><img src="https://i.ibb.co/Mfn1wS0/A-galinha-ambulante.png" class="logo-under" alt="Main Logo"></a></li>
         </ul>
-    </ul>
-
+        </div>
+    </div>
 </body>
 
 

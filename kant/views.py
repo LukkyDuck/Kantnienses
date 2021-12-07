@@ -25,3 +25,7 @@ def corporal(request):
 def ambos(request):
     
     return render(request, "Cuestionario/ambos.html")
+    
+def fisico(request):
+    
+    return render(request, "fisico.html")

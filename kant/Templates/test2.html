@@ -24,6 +24,17 @@ src: url(kant/Templates/fonts);
 .image-fondo {
     background-image: url("https://i.ibb.co/949r124/sheno.png");
     background-size: cover;
+    height: 500px;
+    
+}
+.image-fondo::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522,transparent)
+  z-index: 1000;
 }
 
 .cabecera{
@@ -46,6 +57,10 @@ text-transform: uppercase;
 font-family: 'Helvetica', sans-serif;
 border-radius: 50px;
 }
+.boton:hover{
+  background: #fff;
+  color: #2b1055;
+}
 .cuerpo {
     font-family: 'FontAwesome';
   display: inline;
@@ -54,6 +69,22 @@ border-radius: 50px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 85%;
+  max-width; 550px;
+  margin: 0 auto; 
+}
+body {
+  width: 85%;
+  max-width; 850px;
+  margin: 0 auto; 
+}
+.sec{
+  position:relative;
+  padding: 100px;
+  
+}
+.sec p{
+  font-size: 1.2em;
 }
 
 </style>
@@ -63,7 +94,7 @@ border-radius: 50px;
     <div class="image-fondo cabecera">
     
         <h1 style="color:white; font-size:150px; text-align:center">
-        Kant
+          Sweden
 
         </h1>
 
@@ -72,37 +103,23 @@ border-radius: 50px;
 
 <body style="background-color:#ffffff;">
 <h3 class="cuerpo" style="font-size:22px; text-align:center">
-<p align="center">
-El principito narra la historia de un piloto que, mientras intenta reparar su avión averiado en medio del desierto del Sahara, <br/>
-se topa con un pequeño príncipe proveniente del asteroide B 612, que le pide insistentemente que le dibuje un cordero y que 
-nunca olvida una pregunta.<br/>
+<div class="sec">
+<p>
+  La ansiedad es un sentimiento de miedo, temor e inquietud. Puede hacer que sude, se sienta inquieto, tenso, y tener palpitaciones. Puede ser una reacción normal al estrés.
+  Por ejemplo, puede sentirse ansioso cuando se enfrenta a un problema difícil en el trabajo, antes de tomar un examen o antes de tomar una decisión importante.
+  Si bien la ansiedad puede ayudar a enfrentar una situación, además de darle un impulso de energía o ayudarle a concentrarse, para las personas con trastornos
+  de ansiedad el miedo no es temporal y puede ser abrumadora.
+  Es por esto que decidimos crear esta aplicación web, para intentar apaciguar estos momentos en
+  el que sientes que necesitas algún consejo externo, pero no sabes de donde obtenerlo
+  Déjanos aportar nuestro granito de arena para ayudarte
+  A continuación, usted debera completar un cuestionario, esto con la intención de poder personalizar la ayuda según sus preferencias.
+  Está compuesto por 12 preguntas<br><br> recuerde rellenarlas todas
 </p>
-<p align="center">
-El piloto empezará a descubrir la fascinante historia del principito, que comienza en su asteroide, donde vivía con<br/>
- tres volcanes, uno inactivo, y se entretenía en arrancar las malas hierbas y ver puestas de sol.<br/>
-</p>
-<p align="center">
-Un día en el suelo del asteroide del principito nace una flor. El principito la cuida y atiende con dedicación, <br/>
-pero la flor es dramática y caprichosa, y esto le molesta. El principito entonces decide abandonar su asteroide<br/>
- y emprender un viaje por el universo en busca de un amigo.<br/>
-</p>
-<p align="center">
-En la travesía, que llevará al principito a visitar varios asteroides hasta llegar al la Tierra, conocerá a una <br/>
-variado grupo de excéntricos personajes que lo convencen de lo extraño que es el mundo de los adultos, tan ocupados<br/>
- siempre en asuntos serios e importantes, que se olvidan de disfrutar la vida.<br/>
-</p>
-<p align="center">
-En la Tierra, el principito entrará en contacto con animales, flores y personas. Será allí donde,<br/> 
-antes de encontrar al piloto, conocerá al zorro, quien le revelará la importancia de la amistad y<br/>
- el valor del amor que siente hacia su flor. Será la nostalgia por ella y la decepción que le causa<br/>
-  el mundo de los adultos lo que motivará al principito a regresar a su planeta.<br/>
-</p>
-<br>
-<br>
-<br>
+</div>
+
 <div>
   <a class="boton" href="{% url 'cuestionario' %}">
-  Registrarse
+  Comenzar
   </a>
 </div>
 </br>

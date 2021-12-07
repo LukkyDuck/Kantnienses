@@ -1,0 +1,107 @@
+{%extends "base.html"%}
+
+{% block title %} Corporal {% endblock %}
+
+{% block content%}
+
+
+<html>
+    <style>
+        @font-face {
+          font-family: 'FontAwesome';
+          src: url('kant/Templates/fonts/fontawesome-webfont.eot?v=4.7.0');
+          src: url('kant/Templates/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('kant/Templates/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('kant/Templates/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('kant/Templates/fonts//fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('kant/Templates/fonts//fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+          font-weight: normal;
+          font-style: normal;
+        }
+        @font-face{
+        font-family: FontAwesome;
+        src: url(kant/Templates/fonts);
+        }
+        
+        
+        .cabecera{
+          color: #fff;
+          height: 150px;
+          line-height: 150px;
+          text-align: center;
+          vertical-align: middle;
+          text-shadow: #111 0px 0px 10px;
+          text-align: center;
+          align: center;
+        }
+        p{
+          color: #fff;
+          height: 150px;
+          line-height: 150px;
+          text-align: center;
+          vertical-align: middle;
+          text-shadow: #111 0px 0px 10px;
+          text-align: center;
+          align: center;
+          font-size: 1.5em
+        }
+        #player{
+          vertical-align: middle;
+          margin-left: auto;
+          margin-right: auto;
+          display: block
+}
+
+
+        
+        
+
+        
+        </style>
+
+    <head>
+        
+           <div class="cabecera">
+    
+                <h1 style="color:white; font-size:100px; text-align:center">
+                  Corporal
+
+           </h1>
+
+
+         </div>
+         <p align="center" style="fontsi">
+          Fuiste redireccionado a esta página porque los resultados de tu test indicaron que tienes mayor afinidad con ejercicios corporales<br/>
+        </p>
+    </head>
+  <body>
+    
+
+    <div id="player"></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '360',
+          width: '640',
+          videoId: 'V7IUtUsfARA',
+
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+
+
+    </script>
+  </body>
+</html>
+
+
+{% endblock %}
