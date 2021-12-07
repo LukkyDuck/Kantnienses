@@ -6,4 +6,95 @@
 
     <p> Sos cognitivo papito</p>
 
-{% endblock %}
+    {%extends "base.html"%}
+
+    {% block title %} Corporal {% endblock %}
+    
+    {% block content %}
+    
+    <html>
+        <style>
+            @font-face {
+              font-family: 'FontAwesome';
+              src: url('kant/Templates/fonts/fontawesome-webfont.eot?v=4.7.0');
+              src: url('kant/Templates/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('kant/Templates/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('kant/Templates/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('kant/Templates/fonts//fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('kant/Templates/fonts//fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+              font-weight: normal;
+              font-style: normal;
+            }
+            @font-face{
+            font-family: FontAwesome;
+            src: url(kant/Templates/fonts);
+            }
+    
+            .cabecera{
+              color: #fff;
+              height: 150px;
+              line-height: 150px;
+              text-align: center;
+              vertical-align: middle;
+              text-shadow: #111 0px 0px 10px;
+              text-align: center;
+            }
+            p{
+              color: #fff;
+              height: 150px;
+              line-height: 150px;
+              text-align: center;
+              vertical-align: middle;
+              text-shadow: #111 0px 0px 10px;
+              text-align: center;
+              font-size: 1.5em
+            }
+    
+            #player1{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+    
+        </style>
+    
+        <head>
+            <div>
+                <h1 style="color: white; text-align: center; font-size:100px;">
+                    Cognitivo
+                </h1>
+                <p align="center" style="fontsi">
+                    Hola bienvenido de acuedo a tus resultados del test hemos decidido enviarte a esta pagina<br/>
+                </p>
+            </div>
+        </head>
+    
+        <body>
+            <div id="player1"></div>
+    
+            <script>
+                var tag = document.createElement('script');
+    
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+                var player;
+                function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: 'wSndsVh8HRM',
+                });
+                }
+    
+                function onPlayerReady(event) {
+                event.target.playVideo();
+                }
+    
+                var done = false; 
+            </script>
+    
+            
+        </body>
+    
+    
+    </html>
+    
+    {% endblock %}
