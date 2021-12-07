@@ -24,6 +24,3 @@ def quest(request):
         if cont >= 0:
             return redirect('cuestionarioC') 
     return render(request,"Cuestionario/cuestionario.html", context)
-
-def quest2(request):
-    return render(request, "Cuestionario/cuestionario2.html")

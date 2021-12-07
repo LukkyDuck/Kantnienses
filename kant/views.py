@@ -18,9 +18,7 @@ def cognitivo(request):
     
     return render(request, "Cuestionario/cognitivo.html")
 
-def corporal(request):
-    
-    return render(request, "fisico.html")
+
 
 def ambos(request):
     

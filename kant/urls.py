@@ -15,18 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from kant.views import test1, test2, cuestionarioC, corporal, cognitivo, ambos, fisico
-from cuestionario.views import quest, quest2
+from kant.views import test1, test2, cuestionarioC, cognitivo, ambos, fisico
+from cuestionario.views import quest
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('basurero/', test1, name="pruebas"),
     path('', test2, name="lobby"),
     path('cuestionario/', quest, name="cuestionario"),
-    path("cuestionario2/", quest2, name="cuestionario2"),
     path("cuestionarioC/", cuestionarioC, name="cuestionarioC"),
     path("cuestionarioC/cognitivo", cognitivo, name="cognitivo"),
-    path("cuestionarioC/corporal", corporal, name="corporal"),
     path("cuestionarioC/ambos", ambos, name="ambos"),
-    path("corporal/", fisico, name="fisico"),
+    path("cuestionarioC/corporal/", fisico, name="fisico"),
 ]
