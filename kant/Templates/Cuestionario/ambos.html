@@ -1,9 +1,98 @@
 {% extends "base.html" %}
 
-{% block title %} REFLEXION {% endblock %}
+{% block title %} Ambos {% endblock %}
 
 {% block content%}
 
-    <p> Sos un equilibrio papito</p>
+
+<html>
+    <style>
+        @font-face {
+          font-family: 'FontAwesome';
+          src: url('kant/Templates/fonts/fontawesome-webfont.eot?v=4.7.0');
+          src: url('kant/Templates/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('kant/Templates/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('kant/Templates/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('kant/Templates/fonts//fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('kant/Templates/fonts//fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+          font-weight: normal;
+          font-style: normal;
+        }
+        @font-face{
+        font-family: FontAwesome;
+        src: url(kant/Templates/fonts);
+        }
+        .boton {
+        border: 5px solid #FFFFFF;
+        padding: 20px;
+        background-color: #94DDE1;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Helvetica', sans-serif;
+        border-radius: 50px;
+        }
+
+        .cabecera{
+          color: #fff;
+          height: 150px;
+          line-height: 150px;
+          text-align: center;
+          vertical-align: middle;
+          text-shadow: #111 0px 0px 10px;
+          text-align: center;
+        }
+        p{
+          color: #fff;
+          height: 150px;
+          line-height: 150px;
+          text-align: center;
+          vertical-align: middle;
+          text-shadow: #111 0px 0px 10px;
+          text-align: center;
+          font-size: 1.5em
+        }
+
+    </style>
+
+    <head>
+        <div class="cabecera">
+            <h1 style="color: white; text-align: center; font-size:100px;">
+                Corporal y Cognitivos
+            </h1>
+            <p align="center" style="fontsi">
+                Bienvenido de acuedo a tus resultados del test ambos metodos son efectivos por lo cual puedes elegir<br/>
+            </p>
+        </div>
+    </head>
+
+    <body>
+        
+      <div align="center">
+        <a class="boton" href="{% url 'fisico' %}">
+        Corporal
+        </a>
+
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+
+        <a class="boton" href="{% url 'cognitivo' %}">
+        Cognitivo
+        </a>
+      </div>
+
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+
+    </body>
+
+
+</html>
 
 {% endblock %}
